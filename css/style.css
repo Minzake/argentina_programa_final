@@ -1,0 +1,14 @@
+.contenedor_principal{
+    background-color: wheat;
+    max-width: 1050px;  
+}
+#foto_cv{
+    max-width: 250px;
+    max-width: 250px;
+    border: 2px brown solid;
+    border-radius: 15%;
+    margin: 50px;
+}
+#nombre{
+    font-family: 'Special Elite', cursive;
+}
