@@ -24,7 +24,8 @@
     color: lightslategray;
 }
 .amarillo{
-    color:gold
+    color:gold;
+    text-decoration: none;
 }
 #img_pie{
     padding: 0px;

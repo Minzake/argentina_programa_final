@@ -43,15 +43,18 @@
             <div class="col-md-1 col-sm-0"></div>
             <div class="col-md-5 col-sm-12">
                 <p>
-                    <h3 class="amarillo">BIOGRAFÍA PERSONAL</h3>
+                    <a id="bio_personal" onclick="mostrar(bio_personal_cont)" class="amarillo" href="#"><h3>BIOGRAFÍA PERSONAL</h3></a>
+                    <div id="bio_personal_cont" style="display:none">
                     Como profesor de educación especial he trabajado con 
                     estudiantes de varios niveles, desde preescolar hasta 
                     secundario. Soy docente certificado y me destaco por 
                     trabajar arduamente para acompañar a los estudiantes.
+                    </div>
                 </p>
                 <br>
                 <p>
-                    <h3 class="amarillo">EXPERIENCIA LABORAL</h3>
+                    <a id="exp_laboral" onclick="mostrar(exp_laboral_cont)" class="amarillo" href="#"><h3>EXPERIENCIA LABORAL</h3></a>
+                    <div id="exp_laboral_cont" style="display:none">
                     <h4 class="amarillo">Director de Educación Especial</h4>
                     <h6 class="amarillo">Instituto San José | agosto de 2020 - a la fecha</h6>
                     Crear y manejar la planificación de clases para los
@@ -65,27 +68,33 @@
                     a los estudiantes con necesidades diferentes.
                     Proporcionar información adicional a los padres 
                     que ayudan con las tareas.
+                    </div>
                 </p>
             </div >
             <div class="col-md-5 col-sm-12 ">
                 <p>
-                    <h4 class="amarillo">INFORMACIÓN DE CONTACTO</h4>
+                    <a id="info_contacto" onclick="mostrar(info_contacto_cont)" class="amarillo" href="#"><h4>INFORMACIÓN DE CONTACTO</h4></a>
+                    <div id="info_contacto_cont" style="display:none">
                     Av. Santa Cruz 1234, Martínez, Buenos Aires. CP: 1234
                     Teléfono: 11 4321 4567 Mail: hola@sitioincreible.com.ar
                     Sitio web: www.sitioincreible.com.ar
+                    </div>
                 </p>
                 <br>
                 <p>
-                    <h3 class="amarillo">HISTORIAL ACADÉMICO</h3>
+                    <a id="histo_academico" onclick="mostrar(histo_academico_cont)" class="amarillo" href="#"><h3>HISTORIAL ACADÉMICO</h3></a>
+                    <div id="histo_academico_cont" style="display:none">
                     <h5 class="amarillo">Universidad del Norte</h5>
                     <h6 class="amarillo">Licenciatura en Ciencias de la Comunicación 1 Graduado en junio 2017</h6>
                     Área de especialización: Técnicas de Educación
                     especial y comunicación.
                     Calificación del certificado de Educación 
                     especial: 98% (aprobado con reconocimientos)
+                    </div>
                 </p>
                 <p>
-                    <h3 class="amarillo">REFERENCIAS <br>PERSONALES</h3>
+                    <a id="ref_persona" onclick="mostrar(ref_personal_cont)" class="amarillo" href="#"><h3>REFERENCIAS <br>PERSONALES</h3></a>
+                    <div id="ref_personal_cont" style="display:none">
                     Antonio Patricios, Instituto Buenos Aires
                     (11) 1234 5678
                     hola@sitioincreible.com.ar
@@ -93,6 +102,7 @@
                     Carlos Ojeda, Instituto San José 
                     (11) 1234 5678
                     hola@sitioincreible.com.ar
+                    </div>
                 </p>
             </div>
             <div class="col-md-1 col-sm-0"></div>
@@ -103,5 +113,6 @@
         </div>
     </footer>
     </main>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
