@@ -1,14 +1,39 @@
+*{
+    color: whitesmoke;
+}
 .contenedor_principal{
-    background-color: wheat;
+    background-color:rgb(31, 31, 31);
     max-width: 1050px;  
 }
-#foto_cv{
-    max-width: 250px;
-    max-width: 250px;
-    border: 2px brown solid;
-    border-radius: 15%;
-    margin: 50px;
+.contenedor_nombre{
+    margin:50px;
 }
-#nombre{
-    font-family: 'Special Elite', cursive;
+#foto_cv{
+    width: auto;
+    height: auto;
+    max-width: 250px;
+    max-height: 250px;
+    border: 6px goldenrod solid;
+    border-radius: 50%;
+    
+}
+.nombre{
+    color: gold;
+}
+.ocupacion{
+    color: lightslategray;
+}
+.amarillo{
+    color:gold
+}
+#img_pie{
+    padding: 0px;
+    height: 200px;
+}
+#img_head{
+    padding: 0px;
+    height: 200px;
+}
+.super_contenedor_nombre_foto{
+    margin-bottom: 10%;
 }
