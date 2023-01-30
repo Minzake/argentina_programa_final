@@ -9,6 +9,7 @@
     <!-- Link BS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +44,7 @@
             <div class="col-md-1 col-sm-0"></div>
             <div class="col-md-5 col-sm-12">
                 <p>
-                    <a id="bio_personal" onclick="mostrar(bio_personal_cont)" class="amarillo" href="#"><h3>BIOGRAFÍA PERSONAL</h3></a>
+                    <a id="bio_personal" onclick="hacer_click(bio_personal_cont, icon_bio)" class="amarillo" href="#"><h3><i style="color: gold;" class="bi bi-caret-right me-1" id="icon_bio"></i>BIOGRAFÍA PERSONAL</h3></a>
                     <div id="bio_personal_cont" style="display:none">
                     Como profesor de educación especial he trabajado con 
                     estudiantes de varios niveles, desde preescolar hasta 
@@ -53,7 +54,7 @@
                 </p>
                 <br>
                 <p>
-                    <a id="exp_laboral" onclick="mostrar(exp_laboral_cont)" class="amarillo" href="#"><h3>EXPERIENCIA LABORAL</h3></a>
+                    <a id="exp_laboral" onclick="hacer_click(exp_laboral_cont, icon_exp)" class="amarillo" href="#"><h3><i style="color: gold;" class="bi bi-caret-right me-1" id="icon_exp"></i>EXPERIENCIA LABORAL</h3></a>
                     <div id="exp_laboral_cont" style="display:none">
                     <h4 class="amarillo">Director de Educación Especial</h4>
                     <h6 class="amarillo">Instituto San José | agosto de 2020 - a la fecha</h6>
@@ -61,6 +62,7 @@
                     alumnos con necesidades diferentes.
                     Comunicación con el resto de los docentes y con los 
                     padres para asegurarse de cumplir con las necesidades educativas.
+                    <br>
                     <br>
                     <h4 class="amarillo">Docente de educación especial</h4>
                     <h6 class="amarillo">Instituto de Buenos Aires | agosto 2017 a julio de 2020</h6>
@@ -73,7 +75,7 @@
             </div >
             <div class="col-md-5 col-sm-12 ">
                 <p>
-                    <a id="info_contacto" onclick="mostrar(info_contacto_cont)" class="amarillo" href="#"><h4>INFORMACIÓN DE CONTACTO</h4></a>
+                    <a id="info_contacto" onclick="hacer_click(info_contacto_cont, icon_inf)" class="amarillo" href="#"><h3><i style="color: gold;" class="bi bi-caret-right me-1" id="icon_inf"></i>INFORMACIÓN DE CONTACTO</h3></a>
                     <div id="info_contacto_cont" style="display:none">
                     Av. Santa Cruz 1234, Martínez, Buenos Aires. CP: 1234
                     Teléfono: 11 4321 4567 Mail: hola@sitioincreible.com.ar
@@ -82,7 +84,7 @@
                 </p>
                 <br>
                 <p>
-                    <a id="histo_academico" onclick="mostrar(histo_academico_cont)" class="amarillo" href="#"><h3>HISTORIAL ACADÉMICO</h3></a>
+                    <a id="histo_academico" onclick="hacer_click(histo_academico_cont, icon_his)" class="amarillo" href="#"><h3><i style="color: gold;" class="bi bi-caret-right me-1" id="icon_his"></i>HISTORIAL ACADÉMICO</h3></a>
                     <div id="histo_academico_cont" style="display:none">
                     <h5 class="amarillo">Universidad del Norte</h5>
                     <h6 class="amarillo">Licenciatura en Ciencias de la Comunicación 1 Graduado en junio 2017</h6>
@@ -92,8 +94,9 @@
                     especial: 98% (aprobado con reconocimientos)
                     </div>
                 </p>
+                <br>
                 <p>
-                    <a id="ref_persona" onclick="mostrar(ref_personal_cont)" class="amarillo" href="#"><h3>REFERENCIAS <br>PERSONALES</h3></a>
+                    <a id="ref_persona" onclick="hacer_click(ref_personal_cont,icon_ref)" class="amarillo" href="#"><h3><i style="color: gold;" class="bi bi-caret-right me-1" id="icon_ref"></i>REFERENCIAS PERSONALES</h3></a>
                     <div id="ref_personal_cont" style="display:none">
                     Antonio Patricios, Instituto Buenos Aires
                     (11) 1234 5678
