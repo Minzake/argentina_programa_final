@@ -24,18 +24,7 @@ function hacer_click(titulo,icon){
     mostrar(titulo);
     
 }
-
-
-/* $.ajax({
-    url: 'https://randomuser.me/api/',
-    dataType: 'json',
-    success: function(data) {
-        console.log(data);
-        document.querySelector('#telefono').textContent = data.results[0].cell;
-        document.querySelector('#foto_cv').src = data.results[0].picture.large
-    }
-    }); */
-
+/* agrego conexion con api random */
 fetch('https://randomuser.me/api/')
 .then(response => response.json())
 .then(data => {
@@ -45,8 +34,3 @@ fetch('https://randomuser.me/api/')
     document.querySelector('#telefono').textContent = data.results[0].cell;
     document.querySelector('#foto_cv').src = data.results[0].picture.large
 });
-
-
-
-/* document.getElementById("container").classList.remove("color");
-document.getElementById('mi_elemento').classList.add('nueva_clase'); */
