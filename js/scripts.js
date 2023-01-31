@@ -25,5 +25,28 @@ function hacer_click(titulo,icon){
     
 }
 
+
+/* $.ajax({
+    url: 'https://randomuser.me/api/',
+    dataType: 'json',
+    success: function(data) {
+        console.log(data);
+        document.querySelector('#telefono').textContent = data.results[0].cell;
+        document.querySelector('#foto_cv').src = data.results[0].picture.large
+    }
+    }); */
+
+fetch('https://randomuser.me/api/')
+.then(response => response.json())
+.then(data => {
+    console.log(data);
+    document.querySelector('.nombre').innerHTML = "<h1>" + data.results[0].name.first.toUpperCase() + "<br>" + data.results[0].name.last.toUpperCase() + "</h1>";
+    document.querySelector('#email').textContent = data.results[0].email;
+    document.querySelector('#telefono').textContent = data.results[0].cell;
+    document.querySelector('#foto_cv').src = data.results[0].picture.large
+});
+
+
+
 /* document.getElementById("container").classList.remove("color");
 document.getElementById('mi_elemento').classList.add('nueva_clase'); */

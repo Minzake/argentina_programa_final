@@ -24,27 +24,23 @@
             </div>
         </header>
         <div class="row super_contenedor_nombre_foto">
-            <div class="col-md-4 col-sm-12 text-end" id="nombre">
-                <img id="foto_cv" src="img/foto_cv.jpg" alt="foto_cv">
+            <div class="col-md-5 col-sm-12 text-center" id="nombre">
+                <img id="foto_cv" src="" alt="foto_cv">
             </div>
             
             <div class="col-md-6 col-sm-12">
                 <div class="container contenedor_nombre text-end">
-                    <h1 class="nombre">
-                        DANIEL
-                        <br>
-                        GÓMEZ
-                    </h1>
+                    <div class="nombre"></div>
                     <h3 class="ocupacion">EDUCADOR ESPECIAL</h3>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-0"></div>
+            <div class="col-md-1 col-sm-0"></div>
         </div>
         <div class="row">
             <div class="col-md-1 col-sm-0"></div>
             <div class="col-md-5 col-sm-12">
                 <p>
-                    <a id="bio_personal" onclick="hacer_click(bio_personal_cont, icon_bio)" class="amarillo" href="#"><h3><i style="color: gold;" class="bi bi-caret-right me-1" id="icon_bio"></i>BIOGRAFÍA PERSONAL</h3></a>
+                    <a id="bio_personal" onclick="hacer_click(bio_personal_cont, icon_bio)" class="amarillo puntero"><h3><i style="color: gold;" class="bi bi-caret-right me-1" id="icon_bio"></i>BIOGRAFÍA PERSONAL</h3></a>
                     <div id="bio_personal_cont" style="display:none">
                     Como profesor de educación especial he trabajado con 
                     estudiantes de varios niveles, desde preescolar hasta 
@@ -54,7 +50,7 @@
                 </p>
                 <br>
                 <p>
-                    <a id="exp_laboral" onclick="hacer_click(exp_laboral_cont, icon_exp)" class="amarillo" href="#"><h3><i style="color: gold;" class="bi bi-caret-right me-1" id="icon_exp"></i>EXPERIENCIA LABORAL</h3></a>
+                    <a id="exp_laboral" onclick="hacer_click(exp_laboral_cont, icon_exp)" class="amarillo puntero"><h3><i style="color: gold;" class="bi bi-caret-right me-1" id="icon_exp"></i>EXPERIENCIA LABORAL</h3></a>
                     <div id="exp_laboral_cont" style="display:none">
                     <h4 class="amarillo">Director de Educación Especial</h4>
                     <h6 class="amarillo">Instituto San José | agosto de 2020 - a la fecha</h6>
@@ -75,16 +71,16 @@
             </div >
             <div class="col-md-5 col-sm-12 ">
                 <p>
-                    <a id="info_contacto" onclick="hacer_click(info_contacto_cont, icon_inf)" class="amarillo" href="#"><h3><i style="color: gold;" class="bi bi-caret-right me-1" id="icon_inf"></i>INFORMACIÓN DE CONTACTO</h3></a>
+                    <a id="info_contacto" onclick="hacer_click(info_contacto_cont, icon_inf)" class="amarillo puntero"><h3><i style="color: gold;" class="bi bi-caret-right me-1" id="icon_inf"></i>INFORMACIÓN DE CONTACTO</h3></a>
                     <div id="info_contacto_cont" style="display:none">
                     Av. Santa Cruz 1234, Martínez, Buenos Aires. CP: 1234
-                    Teléfono: 11 4321 4567 Mail: hola@sitioincreible.com.ar
+                    Teléfono: <span id="telefono"></span> Mail: <span id="email"></span>
                     Sitio web: www.sitioincreible.com.ar
                     </div>
                 </p>
                 <br>
                 <p>
-                    <a id="histo_academico" onclick="hacer_click(histo_academico_cont, icon_his)" class="amarillo" href="#"><h3><i style="color: gold;" class="bi bi-caret-right me-1" id="icon_his"></i>HISTORIAL ACADÉMICO</h3></a>
+                    <a id="histo_academico" onclick="hacer_click(histo_academico_cont, icon_his)" class="amarillo puntero"><h3><i style="color: gold;" class="bi bi-caret-right me-1" id="icon_his"></i>HISTORIAL ACADÉMICO</h3></a>
                     <div id="histo_academico_cont" style="display:none">
                     <h5 class="amarillo">Universidad del Norte</h5>
                     <h6 class="amarillo">Licenciatura en Ciencias de la Comunicación 1 Graduado en junio 2017</h6>
@@ -96,7 +92,7 @@
                 </p>
                 <br>
                 <p>
-                    <a id="ref_persona" onclick="hacer_click(ref_personal_cont,icon_ref)" class="amarillo" href="#"><h3><i style="color: gold;" class="bi bi-caret-right me-1" id="icon_ref"></i>REFERENCIAS PERSONALES</h3></a>
+                    <a id="ref_persona" onclick="hacer_click(ref_personal_cont,icon_ref)" class="amarillo puntero"><h3><i style="color: gold;" class="bi bi-caret-right me-1" id="icon_ref"></i>REFERENCIAS PERSONALES</h3></a>
                     <div id="ref_personal_cont" style="display:none">
                     Antonio Patricios, Instituto Buenos Aires
                     (11) 1234 5678
@@ -111,11 +107,15 @@
             <div class="col-md-1 col-sm-0"></div>
         </div>
     <footer>
-        <div class="row mt-10">
+        <div class="row">
             <img id="img_pie" src="img/bg_footer.png" alt="">
         </div>
     </footer>
     </main>
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

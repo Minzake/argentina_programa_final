@@ -9,10 +9,8 @@
     margin:50px;
 }
 #foto_cv{
-    width: auto;
-    height: auto;
-    max-width: 250px;
-    max-height: 250px;
+    width: 250px;
+    height: 250px;
     border: 6px goldenrod solid;
     border-radius: 50%;
     
@@ -37,4 +35,7 @@
 }
 .super_contenedor_nombre_foto{
     margin-bottom: 10%;
+}
+.puntero{
+    cursor: pointer;
 }
