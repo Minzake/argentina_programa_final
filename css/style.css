@@ -38,3 +38,6 @@
 .super_contenedor_nombre_foto{
     margin-bottom: 10%;
 }
+.puntero{
+    cursor: pointer;
+}
